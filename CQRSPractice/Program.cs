@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 //Conectar los comandos con su handler, las querys con su handler
 builder.Services.AddMediatR(typeof(Program).Assembly);
 
-builder.Services.AddDbContext<ApplicationDbCOntext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseInMemoryDatabase("TaskDb"));
 
 
